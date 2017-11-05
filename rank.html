@@ -1,0 +1,377 @@
+
+<!--MUDI-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>点心工作室T序列</title>
+	<link rel="Shortcut Icon" href="MDUI/logo.png" />
+	<link rel="stylesheet" href="MDUI/css/mdui.min.css">
+	<script src="MDUI/js/mdui.min.js"></script>
+	<style type="text/css">
+		#error{
+			color: red;
+		}
+		#up{
+			color: blue;
+
+		}
+		#down{
+			color: green;
+		}
+		#add{
+			color: red;
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body class="mdui-drawer-body-left mdui-theme-primary-blue mdui-appbar-with-toolbar ">
+	<header class="mdui-appbar mdui-appbar-fixed">
+			<div class="mdui-toolbar mdui-color-theme ">
+			<span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-drawer="{target: '#left-drawer'}"><i class="mdui-icon material-icons">menu</i></span>
+				
+			  <span class="mdui-typo-title" style="font-weight:400;">
+			  	T序列排名
+			  </span>
+			  <div class="mdui-toolbar-spacer"></div>
+			  <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">share</i></a>
+			</div>
+	</header>
+	<div class="mdui-drawer mdui-color-black" id="left-drawer">
+		<div class="mdui-card mdui-color-grey-900">
+			<div class="mdui-card-primary">
+			    <div class="mdui-card-primary-title mdui-center">About us</div>
+  			</div>
+  			<div class="mdui-card-header">
+			    <img class="mdui-card-header-avatar" src="MDUI/logo.png"/>
+
+			    <div class="mdui-card-header-title"><b>点心网络文化工作室</b></div>
+			    <div class="mdui-card-header-subtitle">点滴服务，心系师生</div>
+			</div>
+		</div>
+		<ul class="mdui-list">
+			 <li class="mdui-list-item mdui-ripple">
+			    <i class="mdui-list-item-icon mdui-icon material-icons">card_membership</i></i>
+			    <div class="mdui-list-item-content"><a href="index.html">测评任务池</a></div>
+			  </li>
+			  <li class="mdui-list-item mdui-ripple">
+			    <i class="mdui-list-item-icon mdui-icon material-icons">card_membership</i></i>
+			    <div class="mdui-list-item-content"><a href="game.html">一个小游戏</a></div>
+			  </li>
+		  <li class="mdui-list-item mdui-ripple">
+		    <i class="mdui-list-item-icon mdui-icon material-icons">mail_outline</i>
+		    <div class="mdui-list-item-content">admin@dxstudio.cc</div>
+		  </li>
+		  <li class="mdui-list-item mdui-ripple">
+		    <i class="mdui-list-item-icon mdui-icon material-icons">language</i>
+		    <div class="mdui-list-item-content">http://dxstudio.cc</div>
+		  </li>
+  	    </ul>
+	</div>
+	<div class="mdui-panel mdui-panel-gapless " mdui-panel>
+  
+	    <div class="mdui-panel-item mdui-panel-item-open">
+		    
+		    
+		      <div class="mdui-table-fluid">
+				  <table class="mdui-table mdui-table-hoverable">
+				    <thead>
+				      <tr>
+				        <th>序列</th>
+				        <th>姓名</th>
+				        <th>积分</th>
+				        <th>进展</th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				    	<tr>
+					        <td><b id="add">↑</b>T3</td>
+					        <td>刘雨露</td>
+					        <td>8</td>
+					        <td id="up">+3+2</td>
+				      	</tr>
+				      	<tr>
+					        <td><b id="add">↑</b>T3</td>
+					        <td>王日升</td>
+					        <td>6</td>
+					        <td id="up">+3</td>
+				      	</tr>
+				      	<tr>
+					        <td><b id="add">↑</b>T3</td>
+					        <td>梁蕊</td>
+					        <td>5</td>
+					        <td id="up">+3</td>
+				      	</tr>
+				      	<tr>
+					        <td><b id="add">↑</b>T2</td>
+					        <td>张国庆</td>
+					        <td>4</td>
+					        <td id="up">+3</td>
+				      	</tr>
+				      		<tr>
+					        <td><b id="add">↑</b>T2</td>
+					        <td>刘小坤</td>
+					        <td>4</td>
+					        <td id="up">+1+2</td>
+				      	</tr>
+				      	<tr>
+					        <td><b id="add">!</b>T2</td>
+					        <td>王景峰</td>
+					        <td>3</td>
+					        <td id="down">0</td>
+				      	</tr>
+				      	<tr>
+					        <td><b id="add">↑</b>T2</td>
+					        <td>杜旭</td>
+					        <td>3</td>
+					        <td id="up">+1</td>
+				      	</tr>
+				      	<tr>
+					        <td><b id="add">↑</b>T2</td>
+					        <td>杜家伟</td>
+					        <td>3</td>
+					        <td id="up">+2</td>
+					    </tr>
+					    <tr>
+					        <td>T1</td>
+					        <td>程思润</td>
+					        <td>2.4</td>
+					        <td id="up">+0.4</td>
+				      	</tr>
+				      	<tr>
+					        <td>T1</td>
+					        <td>程文静</td>
+					        <td>2.4</td>
+					        <td id="up">+0.4</td>
+				      	</tr>
+				      	<tr>
+					        <td><b id="add">↑</b>T1</td>
+					        <td>沈源</td>
+					        <td>2</td>
+					        <td id="up">+2</td>
+					    </tr>
+				      	<tr>
+					        <td><b id="add">!</b>T1</td>
+					        <td>毛玲玲</td>
+					        <td>2</td>
+					        <td id="down">0</td>
+				      	</tr>
+				      	
+				      	<tr>
+					        <td><b id="add">!</b>T1</td>
+					        <td>李晓强</td>
+					        <td>2</td>
+					        <td id="down">0</td>
+				      	</tr>
+				      	<tr>
+					        <td>T1</td>
+					        <td>黄文超</td>
+					        <td>2</td>
+					        <td id="up">+1</td>
+				      	</tr>
+				      	<tr>
+					        <td>T1</td>
+					        <td>张博翔</td>
+					        <td>1.4</td>
+					        <td id="up">+0.4</td>
+				      	</tr>
+				      	<tr>
+					        <td>T1</td>
+					        <td>马愉愉</td>
+					        <td>1.4</td>
+					        <td id="up">+0.4</td>
+				      	</tr>
+				      	<tr>
+					        <td>T1</td>
+					        <td>李富家</td>
+					        <td>1.2</td>
+					        <td id="up">+0.2</td>
+				      	</tr>
+				      	<tr>
+					        <td>T1</td>
+					        <td>王妮</td>
+					        <td>1</td>
+					        <td id="up">0</td>
+				      	</tr>
+				      	<tr>
+					        <td><b id="add">!</b>T1</td>
+					        <td>王玉琪</td>
+					        <td>1</td>
+					        <td id="down">0</td>
+				      	</tr>
+				      
+				      	<tr>
+					        <td><b id="add">!</b>T1</td>
+					        <td>张文龙</td>
+					        <td>1</td>
+					        <td id="down">0</td>
+				      	</tr>
+				      	<tr>
+					        <td><b id="add">!</b>T1</td>
+					        <td>梁富恒</td>
+					        <td>1</td>
+					        <td id="down">0</td>
+				      	</tr>
+				      	
+				      	<tr>
+					        <td><b id="add">!</b>T1</td>
+					        <td>李煜哲</td>
+					        <td>1</td>
+					        <td id="down">0</td>
+				      	</tr>
+				      	<tr>
+					        <td><b id="add">!</b>T1</td>
+					        <td>李梦园</td>
+					        <td>1</td>
+					        <td id="down">0</td>
+				      	</tr>
+				      	<tr>
+					        <td>T1</td>
+					        <td>李朵</td>
+					        <td>1</td>
+					        <td id="up">0</td>
+				      	</tr>
+				      	
+				      	<tr>
+					        <td><b id="add">!</b>T1</td>
+					        <td>陈治恒</td>
+					        <td>1</td>
+					        <td id="down">0</td>
+				      	</tr>
+				      	
+				      	<tr>
+					        <td>T0</td>
+					        <td>查润微</td>
+					        <td>0.2</td>
+					        <td id="up">+0.2</td>
+				      	</tr>
+				      	<tr>
+					        <td>T0</td>
+					        <td>樊林飞</td>
+					        <td>0</td>
+					        <td id="up">0</td>
+				      	</tr>
+				      	<tr>
+					        <td><b id="add">!</b>T0</td>
+					        <td>李琳香漪</td>
+					        <td>0</td>
+					        <td id="down">0</td>
+				      	</tr>
+				      	<tr>
+					        <td><b id="add">!</b>T0</td>
+					        <td>郑超凡</td>
+					        <td>0</td>
+					        <td id="down">0</td>
+				      	</tr>
+				      	<tr>
+					        <td><b id="add">!</b>T0</td>
+					        <td>刘舒同</td>
+					        <td>0</td>
+					        <td id="down">0</td>
+				      	</tr>
+				      	<tr>
+					        <td><b id="add">!</b>T0</td>
+					        <td>陈秋秋</td>
+					        <td>0</td>
+					        <td id="down">0</td>
+				      	</tr>
+				      	<tr>
+					        <td><b id="add">!</b>T0</td>
+					        <td>李延东</td>
+					        <td>0</td>
+					        <td id="down">0</td>
+				      	</tr>
+				      	<tr>
+					        <td><b id="add">!!</b>T0</td>
+					        <td>徐建雪</td>
+					        <td>0</td>
+					        <td id="down">0</td>
+				      	</tr>
+				      	<tr>
+					        <td><b id="add">!!</b>T0</td>
+					        <td>白鑫柯</td>
+					        <td>0</td>
+					        <td id="down">0</td>
+				      	</tr>
+				      	<tr>
+					        <td><b id="add">!!</b>T0</td>
+					        <td>谢东东</td>
+					        <td>0</td>
+					        <td id="down">0</td>
+				      	</tr>
+				      	<tr>
+					        <td><b id="add">!!</b>T0</td>
+					        <td>吴巧</td>
+					        <td>0</td>
+					        <td id="down">0</td>
+				      	</tr>
+				      	<tr>
+					        <td><b id="add">!!</b>T0</td>
+					        <td>朱嘉琦</td>
+					        <td>0</td>
+					        <td id="down">0</td>
+				      	</tr>
+				      	<tr>
+					        <td><b id="add">!!</b>T0</td>
+					        <td>高雨</td>
+					        <td>0</td>
+					        <td id="down">0</td>
+				      	</tr>
+				      	<tr>
+					        <td><b id="add">!!</b>T0</td>
+					        <td>郭桂臣</td>
+					        <td>0</td>
+					        <td id="down">0</td>
+				      	</tr>
+				      	<tr>
+					        <td><b id="add">!!</b>T0</td>
+					        <td>董迪昊</td>
+					        <td>0</td>
+					        <td id="down">0</td>
+				      	</tr>
+				      	<tr>
+					        <td><b id="add">!!</b>T0</td>
+					        <td>张瑜</td>
+					        <td>0</td>
+					        <td id="down">0</td>
+				      	</tr>
+				      	<tr>
+					        <td><b id="add">!!</b>T0</td>
+					        <td>王金德</td>
+					        <td>0</td>
+					        <td id="down">0</td>
+				      	</tr>
+				      	<tr>
+					        <td><b id="add">!!</b>T0</td>
+					        <td>张家同</td>
+					        <td>0</td>
+					        <td id="down">0</td>
+				      	</tr>
+				      	<tr>
+					        <td><b id="add">!!</b>T0</td>
+					        <td>张旻岑</td>
+					        <td>0</td>
+					        <td id="down">0</td>
+				      	</tr>
+				      	<tr>
+					        <td><b id="add">!!</b>T0</td>
+					        <td>施鸿宇</td>
+					        <td>0</td>
+					        <td id="down">0</td>
+				      	</tr>
+				    </tbody>
+				  </table>
+				</div>
+		  
+  		</div>
+  	    
+	  </div>
+	<footer class=" mdui-bottom-nav mdui-bottom-nav-text-auto mdui-color-black ">
+		<div class="mdui-valign mdui-center ">Copyright&copy;2016-2017. All rights deserved.<br>
+			
+		</div>
+		
+	</footer>
+</body>
+</html>
